@@ -1,0 +1,542 @@
+/* Import */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Box-sizing */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #2b2b2b;
+    background-color: #f4f1ec;
+    margin: 0;
+    padding: 0;
+}
+
+/* Immagini */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header */
+
+#site-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/header-bg.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 16px 20px 16px;
+    border-bottom: 4px solid hsl(45, 90%, 60%);
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+#site-header h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: bold;
+}
+
+.tagline {
+    color: #f0e7c8;
+    font-style: italic;
+}
+
+#site-header p {
+    margin-top: 16px;
+}
+
+/* Nav */
+
+#site-header nav {
+    max-width: 576px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#site-header nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+#site-header nav ul li {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#site-header nav a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 2.5;
+    padding: 12px 14px;
+    margin: 0px 4px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+i {
+    margin-right: 8px;
+}
+
+#site-header nav a:hover {
+    color: hsl(220, 60%, 25%);
+    background-color: hsl(45, 90%, 60%);
+    border-color: hsl(45, 90%, 60%);
+}
+
+/* Main */
+
+main {
+    max-width: 576px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+main section {
+    padding: 16px;
+    margin-bottom: 24px;
+    border: 1px solid #e6e0d3;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+main section:first-of-type {
+    margin-top: -58px;
+}
+
+h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(1.3rem, 4vw, 1.8rem);
+    color: hsl(220, 60%, 25%);
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(1.2rem, 3.5vw, 1.5rem);
+    color: hsl(220, 60%, 25%);
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+main section h2::before {
+    content: "\2756 ";
+    color: hsl(45, 90%, 50%);
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+/* ChiSono */
+
+#chiSono,
+.scheda-progetto {
+    background-color: #ffffff;
+    text-align: justify;
+    height: 40%;
+    font-size: 15.5px;
+}
+
+#chiSono .avatar {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border: 5px solid hsl(45, 90%, 60%);
+    border-radius: 50%;
+    margin: 0px auto 16px;
+}
+
+#chiSono #primo-paragrafo::first-letter {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(3rem, 8vw, 4rem);
+    font-weight: bold;
+    font-style: normal;
+    line-height: 1.2;
+    float: left;
+    margin-right: 6px;
+    color: hsl(220, 60%, 30%);
+}
+
+#secondo-paragrafo {
+    text-align: justify;
+    margin-top: 12px;
+}
+
+/* Competenze */
+
+#competenze {
+    background-color: #ffffff;
+    clear: both;
+}
+
+#competenze table {
+    border-collapse: collapse;
+    margin-top: 16px;
+    padding: 0;
+}
+
+caption {
+    color: hsl(220, 30%, 40%);
+    text-align: left;
+    font-style: italic;
+}
+
+#competenze th {
+    color: hsl(220, 60%, 30%);
+    text-align: left;
+    background-color: #F9F5EA;
+    padding: 12px 6px 12px 12px;
+    border-bottom: 1px solid #ece6d8;
+    width: 50%;
+}
+
+#competenze td {
+    border-bottom: 1px solid #ece6d8;
+    padding: 24px 12px 24px 12px;
+}
+
+#competenze i {
+    color: hsl(220, 60%, 30%);
+    padding-right: 6px;
+}
+
+#competenze td p {
+    font-style: italic;
+    color: #5c5a52;
+    font-size: 14px;
+}
+
+#competenze table .contenitore {
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #ece6d8;
+    padding: 0;
+}
+
+#competenze table .autovalutazione {
+    height: 10px;
+    border-radius: 10px;
+    background-color: hsl(45, 90%, 50%);
+    padding: 0;
+}
+
+#primo {
+    width: 80%;
+}
+
+#secondo {
+    width: 80%;
+}
+
+#terzo {
+    width: 50%;
+}
+
+#quarto {
+    width: 20%;
+}
+
+#quinto {
+    width: 20%;
+}
+
+/* Esperienze */
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+#esperienze {
+    background-color: #ffffff;
+    clear: both;
+}
+
+#esperienze caption {
+    color: hsl(220, 30%, 40%);
+    text-align: left;
+}
+
+#esperienze table {
+    border-collapse: collapse;
+    margin-top: 16px;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+    min-width: 480px;
+}
+
+#esperienze th {
+    color: hsl(220, 60%, 30%);
+    background-color: #F9F5EA;
+    padding: 12px 6px 12px 6px;
+    border-bottom: 1px solid #ece6d8;
+    width: 30%;
+}
+
+#esperienze td {
+    border-bottom: 1px solid #ece6d8;
+    padding: 12px 6px 12px 6px;
+}
+
+/* Progetti */
+
+#progetti {
+    background-color: #ffffff;
+}
+
+.project {
+    margin-top: 18px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 12px;
+    color: hsl(220, 60%, 30%);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project a:hover {
+    color: hsl(220, 60%, 45%);
+    border-bottom: 3px solid hsl(45, 90%, 50%);
+}
+
+.project:nth-of-type(odd) {
+    background-color: #F9F5EA;
+    border-left: 6px solid hsl(220, 60%, 30%);
+    border-radius: 8px;
+}
+
+.project:nth-of-type(even) {
+    background-color: #ffffff;
+    border-left: 6px solid hsl(45, 90%, 50%);
+    border-radius: 8px;
+}
+
+.project:last-of-type h3::after {
+    content: "NEW";
+    display: inline-block;
+    padding: 2px 8px;
+    margin-left: 12px;
+    background-color: #F44A4A;
+    color: #ffffff;
+    font-size: 0.75rem;
+    border-radius: 3px;
+    vertical-align: middle;
+}
+
+#link-container {
+    text-align: right;
+    margin-top: 24px;
+}
+
+#link-progetti {
+    color: hsl(220, 60%, 30%);
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 3px solid hsl(45, 90%, 50%);
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+#link-progetti:hover {
+    color: hsl(220, 60%, 45%);
+}
+
+/* Contattami */
+
+#contattami {
+    background-color: #ffffff;
+}
+
+#contattami p {
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+
+#contattami form {
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+    color: #1F3D7A;
+}
+
+input,
+textarea,
+select {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    width: 100%;
+    padding: 12px 6px 12px 12px;
+    border-radius: 4px;
+    background-color: #FBF8F1;
+    font-size: 16px;
+    border: 1px solid #d6cfbf;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-style: italic;
+    color: #a39b87;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    background-color: white;
+    border-color: hsl(220, 60%, 30%);
+}
+
+#consenso {
+    color: #2b2b2b;
+    font-weight: normal;
+    margin-left: 4px;
+    width: auto;
+}
+
+#recontact {
+    width: 4%;
+}
+
+button {
+    color: white;
+    font-size: 16px;
+    background-color: hsl(220, 60%, 30%);
+    font-weight: bold;
+    width: 100%;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: hsl(220, 60%, 45%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+}
+
+/* Footer */
+
+#site-footer {
+    background-color: hsl(220, 40%, 15%);
+    color: #ffffff;
+    font-size: 0.9rem;
+    text-align: center;
+    height: 160px;
+}
+
+#icons-container {
+    padding-top: 36px;
+}
+
+.icone {
+    display: inline-block;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    background-color: rgba(255, 255, 255, 0.08);
+    margin-left: 12px;
+}
+
+.icone:hover {
+    color: hsl(220, 60%, 20%);
+    background-color: hsl(45, 90%, 60%);
+}
+
+.icone i {
+    margin: auto;
+    padding: 12px;
+    font-size: 24px;
+}
+
+#site-footer p {
+    padding-top: 16px;
+    color: #aaafb7;
+    font-size: 16px;
+}
+
+#site-footer a {
+    color: white;
+    text-decoration: none;
+}
+
+#site-footer a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#site-footer a:hover {
+    color: hsl(220, 60%, 20%);
+}
+
+
+@media screen and (min-width: 768px) {
+    #site-header {
+        padding: 60px 20px 40px 20px;
+    }
+
+    #site-header nav {
+        max-width: 768px;
+    }
+
+    main {
+        max-width: 768px;
+        padding: 40px 20px;
+    }
+
+    main section {
+        padding: 32px;
+    }
+
+    main section:first-of-type {
+        margin-top: -102px;
+    }
+
+    #chiSono .avatar {
+        float: left;
+        margin-right: 12px;
+    }
+
+    input,
+    textarea,
+    select {
+        width: 60%;
+    }
+
+    button {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #site-header h1{
+        font-size: clamp(2.5rem, 5vw, 4rem);
+    }
+
+    h2{
+        font-size: clamp(2rem, 4vw, 2.5rem);
+    }
+}
